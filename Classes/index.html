@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Classes</title>
+</head>
+<body>
+    <h1>JavaScript Classes</h1>
+    <small>Creating two car objects from a car class:</small>    
+    demo<p id="demo"></p>
+    <small>How to define and use a Class method.</small>
+    demo1<p id="demo1"></p>
+    <small>Pass a parameter into the "age()" method.</small>
+    demo2<p id="demo2"></p>
+
+    <script type="module" src="index.js"></script>
+    
+    <script>
+        /**
+         * JS Classes
+         * @see https://www.w3schools.com/Js/js_classes.asp
+         * A JavaScript class is not an object. It is a template for JavaScript objects.
+         * If you do not define a constructor method, JavaScript will add an empty constructor method. 
+         */
+        class Car {
+            /**
+             * Always add a method named constructor
+             * @param {*} name 
+             * @param {*} year 
+             */
+            constructor(name, year) {
+                // properties
+                this.name = name;
+                this.year = year;
+            }
+
+            // Methods
+            /**
+             * Class method name "age", that returns the Car age.
+             * @returns 
+             */
+            age() {
+                // obtener fecha de hoy
+                const date = new Date();
+                // restar la fecha de hoy con la fecha del año
+                return date.getFullYear() - this.year;
+            }
+            /**
+             * Send parameter to class method
+             * @param {*} x 
+             * @returns 
+             */
+            ageWithParameter(x) {
+                return x - this.year;
+            }
+        }
+
+        // Create the Car object from Car class
+        const myCar = new Car('Ford', 2014);
+        const myCar1 = new Car('Ford', 2014);
+        const myCar2 = new Car('Audi', 2019);
+
+        // obteniendo la fecha de hoy
+        const date = new Date();
+        let year = date.getFullYear();
+
+        document.getElementById("demo")
+            .innerHTML = myCar1.name + " " + myCar2.name;
+        document.getElementById("demo1")
+            .innerHTML = "My car is " + myCar.age() + " years old.";
+        document.getElementById("demo2")
+            .innerHTML = "My car is " + myCar.ageWithParameter(year) + " years old.";
+
+    </script>
+</body>
+</html>
