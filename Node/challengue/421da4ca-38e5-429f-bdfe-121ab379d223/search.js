@@ -7,5 +7,7 @@ module.exports = class Search extends EventEmitter {
     constructor() {
         super()
     }
-    searchCount(searchTerm) { }
+    searchCount(searchTerm) {
+        this.emit('SEARCH_STARTED', searchTerm);
+     }
 }
