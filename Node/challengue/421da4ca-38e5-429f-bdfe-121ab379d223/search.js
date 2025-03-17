@@ -9,5 +9,12 @@ module.exports = class Search extends EventEmitter {
     }
     searchCount(searchTerm) {
         this.emit('SEARCH_STARTED', searchTerm);
+
+        API.countMatches(searchTerm)
+            .then((value) => {
+                this.emit('SEARCH_SUCCESS', { term: searchTerm, count: value });
+            }, (value) => {
+                this.emit('SEARCH_ERROR', { term: searchTerm, message: value })
+            });
      }
 }

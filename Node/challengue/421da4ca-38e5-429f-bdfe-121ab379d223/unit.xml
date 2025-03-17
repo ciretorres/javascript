@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="Mocha Tests" time="0.494" tests="4" failures="3">
-  <testsuite name="Root Suite" timestamp="2025-03-17T19:56:02" tests="0" time="0.000" failures="0">
+<testsuites name="Mocha Tests" time="0.488" tests="4" failures="2">
+  <testsuite name="Root Suite" timestamp="2025-03-17T20:39:34" tests="0" time="0.000" failures="0">
   </testsuite>
-  <testsuite name="async-search" timestamp="2025-03-17T19:56:02" tests="4" file="/Users/erictorres/Documents/github/javascript/Node/challengue/421da4ca-38e5-429f-bdfe-121ab379d223/test/index.spec.js" time="0.492" failures="3">
-    <testcase name="async-search Should emit the event SEARCH_STARTED when the search starts" time="0.022" classname="Should emit the event SEARCH_STARTED when the search starts">
+  <testsuite name="async-search" timestamp="2025-03-17T20:39:34" tests="4" file="/Users/erictorres/Documents/github/javascript/Node/challengue/421da4ca-38e5-429f-bdfe-121ab379d223/test/index.spec.js" time="0.485" failures="2">
+    <testcase name="async-search Should emit the event SEARCH_STARTED when the search starts" time="0.020" classname="Should emit the event SEARCH_STARTED when the search starts">
     </testcase>
     <testcase name="async-search Should emit the event SEARCH_ERROR if term passed to the function is falsy" time="0.152" classname="Should emit the event SEARCH_ERROR if term passed to the function is falsy">
       <failure message="expected +0 to deeply equal 1" type="AssertionError"><![CDATA[AssertionError: expected +0 to deeply equal 1
@@ -18,28 +18,15 @@
       ]]></failure>
     </testcase>
     <testcase name="async-search Should emit the event SEARCH_ERROR if the API service fails with an error" time="0.152" classname="Should emit the event SEARCH_ERROR if the API service fails with an error">
-      <failure message="expected +0 to deeply equal 1" type="AssertionError"><![CDATA[AssertionError: expected +0 to deeply equal 1
-    at Timeout._onTimeout (test/index.spec.js:59:41)
+      <failure message="expected Error: CONNECTION_ERROR to deeply equal &apos;CONNECTION_ERROR&apos;" type="AssertionError"><![CDATA[AssertionError: expected Error: CONNECTION_ERROR to deeply equal 'CONNECTION_ERROR'
+    at Timeout._onTimeout (test/index.spec.js:61:58)
     at listOnTimeout (node:internal/timers:594:17)
     at process.processTimers (node:internal/timers:529:7)
 
-      + expected - actual
-
-      -0
-      +1
-      ]]></failure>
+      + expected - actual:  failed to generate Mocha diff
+]]></failure>
     </testcase>
-    <testcase name="async-search Should emit the event SEARCH_SUCCESS with the result" time="0.152" classname="Should emit the event SEARCH_SUCCESS with the result">
-      <failure message="expected +0 to deeply equal 1" type="AssertionError"><![CDATA[AssertionError: expected +0 to deeply equal 1
-    at Timeout._onTimeout (test/index.spec.js:76:43)
-    at listOnTimeout (node:internal/timers:594:17)
-    at process.processTimers (node:internal/timers:529:7)
-
-      + expected - actual
-
-      -0
-      +1
-      ]]></failure>
+    <testcase name="async-search Should emit the event SEARCH_SUCCESS with the result" time="0.153" classname="Should emit the event SEARCH_SUCCESS with the result">
     </testcase>
   </testsuite>
 </testsuites>
