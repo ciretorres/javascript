@@ -7,7 +7,8 @@ search.on('SEARCH_STARTED', (term) => {
 })
 
 search.on('SEARCH_ERROR', (result) => {
-    console.log(`Error in search for term "${result.term}"`, result.message);
+    // console.log(`Error in search for term "${result.term}"`, result.message);
+    console.error(`Error in search for term "${result.term}"`, result.message);
 })
 
 search.on('SEARCH_SUCCESS', (result) => {

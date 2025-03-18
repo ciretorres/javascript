@@ -1,9 +1,15 @@
 const countMatches = (searchTerm) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-            const value = Math.floor(Math.random() * 100) + 1
+            const value = Math.floor(Math.random() * 100) + 1;
+
             if (searchTerm !== 'error') {
-                resolve(value);
+                if (searchTerm === undefined) {
+                    reject(new Error('INVALID_TERM'))    
+                } else {                 
+                resolve(value);   
+                }
+                // resolve(value);   
             } else {
                 reject(new Error('CONNECTION_ERROR'))
             }
