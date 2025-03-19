@@ -1,5 +1,9 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
 // https://web.dev/articles/promises?hl=es
 // https://glitch.com/~promises-sync-example
+// https://mdn.github.io/js-examples/promises-test/
+// https://github.com/mdn/js-examples/tree/main/promises-test
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Error
 console.log("promises.js")
 
 // var img1 = document.querySelector('.img-1')
