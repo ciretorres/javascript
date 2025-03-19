@@ -1,3 +1,5 @@
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+// https://www.w3schools.com/Js/js_modules.asp
 console.log('class.js')
 
 // importando clase js desde módulo js
