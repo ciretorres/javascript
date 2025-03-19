@@ -1,3 +1,8 @@
+// https://nodejs.org/en/learn/asynchronous-work/the-nodejs-event-emitter
+// https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick
+// https://nodejs.org/api/events.html#events_events
+// https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Error
+
 // importando la clase EventEmitter de 'events'
 const EventEmitter = require('events');
 const eventEmitter = new EventEmitter();
