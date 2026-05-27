@@ -1,4 +1,5 @@
 const API = require('./mock-api');
+console.log('API',API);
 // To count the matches, call API.countMatches(term) where term is the search term
 const EventEmitter = require('events');
 module.exports = class Search extends EventEmitter {

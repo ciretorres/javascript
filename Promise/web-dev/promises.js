@@ -6,6 +6,19 @@
 // https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Error
 console.log("promises.js")
 
+// function fetchJSONData() {
+//   fetch('https://test.qwer.mx/web-dev/story.json')
+//       .then(response => {
+//           if (!response.ok) {
+//               throw new Error(`HTTP error! Status: ${response.status}`);
+//           }
+//           return response.json();  
+//       })
+//       .then(data => console.log(data))  
+//       .catch(error => console.error('Failed to fetch data:', error)); 
+// }
+// fetchJSONData();  
+
 // var img1 = document.querySelector('.img-1')
 
 // // img1.addEventListener('load', function(){

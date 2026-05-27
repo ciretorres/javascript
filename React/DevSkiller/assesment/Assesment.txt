@@ -1,0 +1,46 @@
+Which response is better?
+
+Justify your answer, being mindful of your grammar. You may use Grammarly, but you may not use an LLM like ChatGPT.
+
+
+
+
+Your Task
+
+    Review the LLM prompt and requirements and evaluate the Response1 and Response2 files for React.js
+    Pick which response satisfies the prompt more accurately and review the code for that response against the Response Requirements
+    Input your final evaluation into Assessment.txt and explain why one response is better than the other
+
+Prompt provided to the LLM
+
+"give me a react component that gives me how much tax i have to pay in the uk, give it a number input and a state controlled area for text. use the 2023/2024 tax bands to make a function that calculates tax and add that as content to the text area. the tax should be based on the users annual income. add caching of the function result so it doenst become a problem"
+
+Response Requirements
+
+    The response must have code
+    The response must return a React.js component
+    The component must a state for annual income
+    The component must not include props
+    The response must include the 2023/2024 tax band, provided below:
+        Income of up top £12570: tax exempt
+        Income between £12571 and £50270: 20% tax
+        Income between £50271 and £125140: 40% tax
+        Income above £125140: 45% tax
+    The response must include a function
+    The function must include one integer argument
+    The function must return an integer
+
+Hints and Tips
+
+    Review each Response and choose which one comes the closest to satisfying the prompt
+    If the prompt asks for code, the response must provide it
+    If a response generates code, you must ensure the code runs without errors
+    If there are errors in the code, use the comment feature to correct the code
+    The response must satisfy but not go beyond the Response Requirements listed above
+    The Response Requirements are more important than code functionality
+    Do not rewrite the function, only fix the errors
+    At the end, choose which Response is better, and justify your answer in the Assessment.txt file
+        Provide details describing why you chose that Response
+        Be mindful of your grammar
+        You may use Grammarly, but you may not use an LLM like ChatGPT
+
